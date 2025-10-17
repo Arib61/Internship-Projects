@@ -1,0 +1,113 @@
+
+   INFO  No scheduled commands are ready to run.  
+
+
+   INFO  No scheduled commands are ready to run.  
+
+
+   INFO  No scheduled commands are ready to run.  
+
+
+   INFO  No scheduled commands are ready to run.  
+
+
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [files] does not exist.
+
+  at vendor\laravel\framework\src\Illuminate\Container\Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Laravel\Sanctum\SanctumServiceProvider), "Laravel\Sanctum\SanctumServiceProvider")
+
+  2   vendor\laravel\framework\src\Illuminate\Container\Container.php:1017
+      ReflectionException::("Class "files" does not exist")
+
+All notifications processed.
+All notifications processed.
+All notifications processed.
+All notifications processed.
+All notifications processed.
+All notifications processed.
+All notifications processed.
+All notifications processed.
+All notifications processed.
+All notifications processed.
+All notifications processed.
+
+   TypeError 
+
+  App\Console\Commands\SendDomiciliationNotifications::sendGestionnaireNotifications(): Argument #2 ($societe) must be of type App\Models\Societe, null given, called in C:\Users\HP\Desktop\Domiciliation\app\Console\Commands\SendDomiciliationNotifications.php on line 26
+
+  at app\Console\Commands\SendDomiciliationNotifications.php:39
+     35▕ 
+     36▕     /**
+     37▕      * Send notifications to gestionnaire 5 days before expiration
+     38▕      */
+  ➜  39▕     protected function sendGestionnaireNotifications(Carbon $today, Societe $societe)
+     40▕     {
+     41▕         $date5jours = $today->copy()->addDays(5)->toDateString();
+     42▕ 
+     43▕         Domiciliation::whereRaw('DATE(date_fin) = ?', [$date5jours])
+
+  1   app\Console\Commands\SendDomiciliationNotifications.php:26
+      App\Console\Commands\SendDomiciliationNotifications::sendGestionnaireNotifications(Object(Carbon\Carbon))
+
+  2   vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:36
+      App\Console\Commands\SendDomiciliationNotifications::handle()
+
+All notifications processed.
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'eryx_societe.deleted_at' in 'where clause' (Connection: mysql, SQL: select * from `eryx_societe` where `eryx_societe`.`deleted_at` is null limit 1)
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:404
+      PDOException::("SQLSTATE[42S22]: Column not found: 1054 Unknown column 'eryx_societe.deleted_at' in 'where clause'")
+
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:404
+      PDO::prepare("select * from `eryx_societe` where `eryx_societe`.`deleted_at` is null limit 1")
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'eryx_societe.deleted_at' in 'where clause' (Connection: mysql, SQL: select * from `eryx_societe` where `eryx_societe`.`deleted_at` is null limit 1)
+
+  at vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+  1   vendor\laravel\framework\src\Illuminate\Database\Connection.php:404
+      PDOException::("SQLSTATE[42S22]: Column not found: 1054 Unknown column 'eryx_societe.deleted_at' in 'where clause'")
+
+  2   vendor\laravel\framework\src\Illuminate\Database\Connection.php:404
+      PDO::prepare("select * from `eryx_societe` where `eryx_societe`.`deleted_at` is null limit 1")
+
+All notifications processed.

@@ -1,0 +1,109 @@
+[
+  {
+    "tittle": "",
+    "active_link": "/",
+    "showAsTab": true,
+    "separateRoute": false,
+    "menu": [
+      {
+        "menuValue": "Tableau de bord (Dash)",
+        "icon": "box",
+        "active_link": "/dashboard",
+        "route": "/dashboard",
+        "hasSubRoute": false,
+        "showSubRoute": false
+      }
+    ]
+  },
+  {
+    "tittle": "Main",
+    "showAsTab": true,
+    "separateRoute": false,
+    "menu": [
+      {
+        "menuValue": "Gestion des clients",
+        "route": "/admin/clients",
+        "active_link": "/admin/clients",
+        "hasSubRoute": false,
+        "showSubRoute": false,
+        "icon": "users"
+      },
+      {
+        "menuValue": "Domiciliation",
+        "active_link": "domiciliation",
+        "hasSubRoute": true,
+        "showSubRoute": false,
+        "icon": "grid",
+        "subMenus": [
+          {
+            "menuValue": "Gestion des domiciliations",
+            "route": "/domiciliations"
+          },
+          {
+            "menuValue": "Liste des renouvellements",
+            "route": "/renouvellements"
+          },
+          {
+            "menuValue": "Liste des résiliations",
+            "route": "/resiliations"
+          }
+        ]
+      },
+      
+      {
+        "menuValue": "Bureaux Équipe",
+        "active_link": "bureaux-equipe",
+        "hasSubRoute": true,
+        "showSubRoute": false,
+        "icon": "briefcase",
+        "subMenus": [
+          {
+            "menuValue": "Gestion B.E",
+            "route": "/admin/bureaux-equipe/BurreauEquipe"
+          },
+          {
+            "menuValue": "Liste des renouvellements",
+            "route": "/admin/bureaux-equipe/BurreauEquipeRenewHistory"
+          },
+          {
+            "menuValue": "Liste des résiliations",
+            "route": "/admin/bureaux-equipe/BurreauEquipeResiliations"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "tittle": "Settings",
+    "showAsTab": true,
+    "separateRoute": false,
+    "menu": [
+      {
+        "menuValue": "General Settings",
+        "icon": "settings",
+        "hasSubRoute": true,
+        "showSubRoute": false,
+        "subMenus": [
+          {
+            "menuValue": "Paramètre de la société",
+            "route": "/settings",
+            "active_link": "/settings",
+            "hasSubRoute": false,
+            "showSubRoute": false
+          },
+          {
+            "menuValue": "Gestion des utilisateurs",
+            "route": "/admin/utilisateurs",
+            "active_link": "/admin/utilisateurs",
+            "hasSubRoute": false,
+            "showSubRoute": false
+          }
+         
+          
+        ]
+      }
+    ]
+  }
+]
+
+

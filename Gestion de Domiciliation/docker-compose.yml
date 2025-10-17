@@ -1,0 +1,59 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: domiciliation
+      MYSQL_USER: user
+      MYSQL_PASSWORD: root
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - app-network
+    ports:
+      - "3307:3306"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: laravel-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    # 🔥 Volume removed to avoid overwriting vendor/
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+    environment:
+      DB_CONNECTION: mysql
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_DATABASE: domiciliation
+      DB_USERNAME: root
+      DB_PASSWORD: root
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: vue-frontend
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./frontend:/app
+    networks:
+      - app-network
+    environment:
+      - NODE_ENV=development
+
+volumes:
+  db_data:
+
+networks:
+  app-network:
+    driver: bridge

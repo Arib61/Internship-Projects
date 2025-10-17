@@ -1,0 +1,14 @@
+[
+    {
+      "icon": "settings",
+      "title": "Paramètres Generale",
+      "page": "settings",
+      "subMenu": [
+        { "title": "Paramètre de la société", "routes": "/settings" },
+        { "title": "Gestion des utilisateurs", "routes": "/admin/utilisateurs" },
+        { "title": "Gestion des gestionnaires", "routes": "/admin/gestionnaires" },
+        { "title": "Gestion  des templates", "routes": "/admin/templates" },
+        { "title": "Gestion des clients", "routes": "/admin/clients" }
+      ]
+    }
+]

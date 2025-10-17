@@ -1,0 +1,13 @@
+{
+    "template_path": "C:\\Users\\HP\\Documents\\GINF2\\StagePfa\\Domicialisation2\\Backend\\..\/Frontend\/public\/doc\/docc.docx",
+    "output_path": "C:\\Users\\HP\\Documents\\GINF2\\StagePfa\\Domicialisation2\\Backend\\storage\\resiliations\\resiliation_1_1750260069.docx",
+    "replacements": {
+        "Rabat le 17\/04\/2025": "Rabat le 18\/06\/2025",
+        "8\/11\/2022": "25\/06\/2026",
+        "< BEEMASTER SERVICE>": "AYMANE",
+        "45 AVENUE DE FRANCE APPT 08 AGDAL RABAT.": "Boukhalef, Tanger",
+        "<BEEMASTER SERVICE>": "ERYX",
+        "16\/04\/2025": "17\/06\/2025",
+        "11111": 0
+    }
+}
