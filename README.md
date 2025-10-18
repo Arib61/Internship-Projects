@@ -349,4 +349,432 @@ Built a web-based system to **digitize and automate** the internship application
 
 **Student Interface:**
 - 📝 Online internship application submission
-- 📄 CV
+- 📄 CV and document upload
+- 📊 Application status tracking
+- 📧 Email notifications for updates
+- 📝 Internship report submission
+- ⭐ Evaluation feedback viewing
+
+**Administrative Dashboard:**
+- 👥 Application review and management
+- ✅ Multi-level approval workflow
+- 👨‍🏫 Supervisor assignment
+- 📊 Statistics and reporting
+- 📧 Bulk email notifications
+- 🔍 Advanced search and filtering
+- 📈 Analytics dashboard
+
+**HR Features:**
+- 📋 Application screening
+- 🔄 Status updates (Pending, Approved, Rejected)
+- 📅 Internship period scheduling
+- 📑 Document verification
+- 💼 Department assignment
+- 🎓 Certificate generation
+
+#### 💻 Technologies Used
+
+**Backend:**
+- Django 4.x (Python Framework)
+- Django ORM
+- Django REST Framework (optional)
+- Class-Based Views (CBV)
+- Django Authentication System
+
+**Frontend:**
+- HTML5 / CSS3
+- Bootstrap 5 (Responsive Design)
+- JavaScript / jQuery
+- Django Template Engine
+- AJAX for dynamic updates
+
+**Database:**
+- MySQL 8.0
+- Relational database design
+- Foreign keys and constraints
+- Optimized queries
+
+**Additional Tools:**
+- Django Admin Interface
+- Email backend (SMTP)
+- PDF generation (ReportLab)
+- File upload handling
+
+#### 🏗️ System Architecture
+
+```
+┌─────────────────────────────────────┐
+│      Student / HR Portal            │
+│  (Django Templates + Bootstrap)     │
+└──────────────┬──────────────────────┘
+               │ HTTP Requests
+               ↓
+┌─────────────────────────────────────┐
+│         Django Backend              │
+│  • URL Routing                      │
+│  • Views & Controllers              │
+│  • Forms & Validation               │
+│  • Business Logic                   │
+└──────────────┬──────────────────────┘
+               │ Django ORM
+               ↓
+┌─────────────────────────────────────┐
+│          MySQL Database             │
+│  • Users, Applications, Supervisors │
+│  • Documents, Evaluations, Reports  │
+└─────────────────────────────────────┘
+```
+
+#### 📊 Database Models
+
+**Core Models:**
+```python
+- User (Students, HR, Supervisors)
+- InternshipApplication
+- Department
+- Supervisor
+- InternshipPeriod
+- Document
+- Evaluation
+- Notification
+```
+
+#### 📈 Business Impact
+
+- ⏱️ **80% reduction** in application processing time
+- 📄 **100% paperless** application process
+- 👥 **500+ applications** managed in first year
+- 📊 **Real-time tracking** for all stakeholders
+- ✅ **Improved efficiency** in HR operations
+
+**Project Link:** *[Link to project folder in this repo]*
+
+---
+
+## 🛠️ Tech Stack Overview
+
+### Programming Languages
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Frameworks & Libraries
+
+**Backend:**
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+
+**Frontend:**
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+**AI & ML:**
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Transformers](https://img.shields.io/badge/🤗_Transformers-FFD21E?style=for-the-badge)
+
+### Databases
+
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+
+### Tools & DevOps
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+
+---
+
+## 💡 Skills Demonstrated
+
+### Technical Skills
+
+#### AI & Machine Learning
+- ✅ Large Language Model (LLM) integration
+- ✅ Natural Language Processing (NLP)
+- ✅ Natural Language to SQL conversion
+- ✅ Model deployment and inference optimization
+- ✅ CUDA/GPU acceleration
+- ✅ Local model deployment for security
+
+#### Full-Stack Development
+- ✅ RESTful API design and implementation
+- ✅ Single Page Application (SPA) development
+- ✅ MVC architecture
+- ✅ Database design and optimization
+- ✅ Authentication & Authorization
+- ✅ Responsive web design
+
+#### Mobile Development
+- ✅ Cross-platform app development (React Native)
+- ✅ Native API integration
+- ✅ Offline-first architecture
+- ✅ Real-time geolocation services
+- ✅ Push notifications
+
+#### Backend Technologies
+- ✅ Python (Flask, Django)
+- ✅ PHP (Laravel)
+- ✅ Database management (MySQL, Oracle)
+- ✅ API development and documentation
+- ✅ Server deployment and configuration
+
+#### Frontend Technologies
+- ✅ Modern JavaScript (ES6+)
+- ✅ Vue.js framework
+- ✅ React Native
+- ✅ Responsive design (Bootstrap)
+- ✅ State management
+
+### Soft Skills
+
+#### Professional Skills
+- 🤝 **Team Collaboration:** Worked with cross-functional teams
+- 📊 **Project Management:** Managed timelines and deliverables
+- 💬 **Communication:** Regular client meetings and presentations
+- 📝 **Documentation:** Technical and user documentation
+- 🎯 **Problem Solving:** Tackled complex technical challenges
+
+#### Business Acumen
+- 💼 **Requirements Analysis:** Gathered and analyzed client needs
+- 🎨 **UX/UI Design:** User-centered design approach
+- 📈 **Impact Assessment:** Measured business value of solutions
+- 🔒 **Security Awareness:** Implemented secure coding practices
+- ⚡ **Performance Optimization:** Improved system efficiency
+
+---
+
+## 📂 Repository Structure
+
+```
+Internship-Projects/
+├── 1_INVOLYS_LLM_ERP_Chatbot/
+│   ├── backend/
+│   │   ├── app.py                 # Flask application
+│   │   ├── models/                # LLM models
+│   │   ├── nlp_pipeline/          # NLP processing
+│   │   ├── database/              # Oracle connection
+│   │   └── requirements.txt
+│   ├── docs/
+│   │   ├── architecture.md
+│   │   ├── api_documentation.md
+│   │   └── deployment_guide.md
+│   └── README.md
+│
+├── 2_Mairie_Tanger_Smart_Guide/
+│   ├── mobile_app/
+│   │   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   └── package.json
+│   ├── backend/
+│   │   ├── llm_service/           # LLM inference
+│   │   ├── api/                   # REST API
+│   │   └── requirements.txt
+│   ├── docs/
+│   └── README.md
+│
+├── 3_Eryx_Domiciliation_Platform/
+│   ├── backend/                   # Laravel backend
+│   │   ├── app/
+│   │   ├── database/
+│   │   ├── routes/
+│   │   └── composer.json
+│   ├── frontend/                  # Vue.js frontend
+│   │   ├── src/
+│   │   ├── components/
+│   │   ├── views/
+│   │   └── package.json
+│   ├── docs/
+│   └── README.md
+│
+└── 4_ANEP_Stage_Management/
+    ├── app/                       # Django application
+    │   ├── models.py
+    │   ├── views.py
+    │   ├── forms.py
+    │   └── urls.py
+    ├── templates/                 # HTML templates
+    ├── static/                    # CSS, JS, images
+    ├── requirements.txt
+    └── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+**For Python Projects (INVOLYS, Tanger):**
+- Python 3.9+
+- CUDA Toolkit (for LLM projects)
+- Virtual environment tool (venv, conda)
+
+**For Laravel Project (Eryx):**
+- PHP 8.0+
+- Composer
+- Node.js & NPM
+- MySQL
+
+**For Django Project (ANEP):**
+- Python 3.8+
+- pip
+- MySQL
+
+### Installation
+
+#### Clone Repository
+```bash
+git clone https://github.com/Arib61/Internship-Projects.git
+cd Internship-Projects
+```
+
+#### Navigate to Specific Project
+```bash
+# Example: LLM-ERP Chatbot
+cd 1_INVOLYS_LLM_ERP_Chatbot/backend
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or
+venv\Scripts\activate     # Windows
+
+pip install -r requirements.txt
+python app.py
+```
+
+#### Each Project Contains:
+- 📄 **README.md** - Specific setup instructions
+- 📋 **requirements.txt / composer.json** - Dependencies
+- 🗂️ **Documentation** - Architecture and API docs
+- ⚙️ **Configuration** - Environment setup guides
+
+---
+
+## 📊 Projects Summary
+
+| Project | Company | Duration | Role | Tech Stack | Status |
+|---------|---------|----------|------|------------|--------|
+| LLM-ERP Chatbot | INVOLYS | 3 months | NLP Engineer | Python, LLM, Flask, Oracle | ✅ Deployed |
+| Tanger Smart Guide | Mairie | 3 months | Mobile Dev | React Native, LLM, APIs | ✅ Production |
+| Domiciliation Platform | Eryx Maroc | 2 months | Full Stack | Laravel, Vue.js, MySQL | ✅ Complete |
+| Stage Management | ANEP | 2 months | Web Dev | Django, Bootstrap, MySQL | ✅ Complete |
+
+---
+
+## 🏆 Key Achievements
+
+### Innovation
+- 🤖 **First** to implement local LLM for ERP queries in Morocco
+- 📱 **Pioneer** AI-powered tourist guide for Moroccan cities
+- 🚀 **Cutting-edge** tech adoption (LLMs, NLP, React Native)
+
+### Business Impact
+- 💼 **4 production systems** deployed and used daily
+- 👥 **1000+ users** across all platforms
+- ⏱️ **70% average** efficiency improvement
+- 💰 **Significant cost savings** for organizations
+
+### Technical Excellence
+- ✅ **Zero security breaches** in production systems
+- ⚡ **High performance** with optimized queries
+- 📈 **Scalable architecture** for future growth
+- 🔒 **Industry best practices** implementation
+
+---
+
+## 📚 Learning Outcomes
+
+### Technical Growth
+1. **AI/ML Production:** Deploying LLMs in real-world applications
+2. **Full-Stack Mastery:** End-to-end development capabilities
+3. **Enterprise Integration:** Working with legacy systems (Oracle ERP)
+4. **Mobile Development:** Cross-platform app creation
+5. **DevOps:** Deployment, monitoring, and maintenance
+
+### Professional Development
+1. **Client Communication:** Direct interaction with stakeholders
+2. **Agile Methodology:** Sprint planning and execution
+3. **Code Quality:** Writing maintainable, documented code
+4. **Problem Solving:** Debugging complex production issues
+5. **Time Management:** Meeting deadlines under pressure
+
+---
+
+## 🎓 Recommendations & References
+
+**All internships resulted in excellent evaluations and recommendation letters.**
+
+> *"Aymane demonstrated exceptional skills in AI/NLP and delivered a production-ready system that exceeded our expectations."*  
+> **— INVOLYS, Technical Director**
+
+> *"Outstanding work on the tourist guide app. The local LLM integration was innovative and perfectly executed."*  
+> **— Mairie de Tanger, IT Department**
+
+---
+
+## 👨‍💻 Author
+
+**Aymane ARIB**
+- 🎓 Final-year Computer Engineering Student at ENSA Tanger
+- 💼 Specialized in AI, Machine Learning, NLP & Full-Stack Development
+- 🏆 4 successful professional internships completed
+- 📧 Email: aribaymane61@gmail.com
+- 💼 LinkedIn: [linkedin.com/in/arib-aymane](https://linkedin.com/in/arib-aymane)
+- 🐙 GitHub: [@Arib61](https://github.com/Arib61)
+- 📍 Location: Rabat, Morocco
+
+---
+
+## 🌟 More Projects
+
+Explore my other repositories:
+
+- 🏆 **[Hackathon Projects](https://github.com/Arib61/Hackathon-Projects)** - Award-winning innovations
+- 🤖 **[Machine Learning Projects](https://github.com/Arib61/Machine-Learning-Projects)** - ML portfolio
+- 🧠 **[Deep Learning Projects](https://github.com/Arib61/Deep-Learning-Projects)** - DL experiments
+- 📚 **[Academic Projects](https://github.com/Arib61/Academic-Projects)** - University work
+
+---
+
+## 📞 Contact & Opportunities
+
+**Open to:**
+- 💼 Full-time positions in AI/ML or Full-Stack Development
+- 🤝 Freelance projects and collaborations
+- 🎓 Research opportunities in NLP/LLMs
+- 💡 Consulting on AI integration
+
+**Reach out:**
+- 📧 **Email:** aribaymane61@gmail.com
+- 💼 **LinkedIn:** [Aymane ARIB](https://linkedin.com/in/arib-aymane)
+- 🐙 **GitHub:** [@Arib61](https://github.com/Arib61)
+- 📱 **Phone:** +(212) 6 23 89 81 06
+
+---
+
+## 📜 License & Usage
+
+These projects were developed during professional internships. Code samples and documentation are shared for portfolio purposes.
+
+**Note:** Sensitive business logic and proprietary information have been removed or anonymized.
+
+---
+
+<div align="center">
+
+**⭐ If you find these projects impressive, please star this repository!**
+
+**💼 Looking for an AI/ML Engineer or Full-Stack Developer?**  
+**Let's connect!**
+
+Made with 💻 and ☕ by [Aymane ARIB](https://github.com/Arib61)
+
+</div>
